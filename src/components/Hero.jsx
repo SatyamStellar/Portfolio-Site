@@ -51,11 +51,11 @@ const Hero = () => {
               sequence={[
 
                 1000, // wait 1s before replacing "Mice" with "Hamsters"
-                'We produce food for Hamsters',
+                'I build websites that drive results.',
                 1000,
-                'You suck at programming',
+                'Custom websites for your business growth.',
                 1000,
-                'But you can improve yourself',
+                'Modern, responsive, and impactful designs.',
                 1000
               ]}
               wrapper="span"
