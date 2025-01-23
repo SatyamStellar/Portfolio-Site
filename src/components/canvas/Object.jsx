@@ -23,6 +23,7 @@ const ObjectCanvas = () => {
   return (
     <Canvas
       shadows
+      className="  -z-10 lg:z-0"
       frameloop='demand'
       gl={{ preserveDrawingBuffer: true }}
       camera={{

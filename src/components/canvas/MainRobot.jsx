@@ -50,7 +50,7 @@ const MainRobotCanvas = () => {
   return (
     <Canvas
       frameloop="demand"
-      className=" xl:ml-[20rem]"
+      className=" xl:ml-[20rem] -z-10 lg:z-0"
       shadows
       camera={{ position: [2, 3, 5], fov: 80 }}
       gl={{ preserveDrawingBuffer: true }}
