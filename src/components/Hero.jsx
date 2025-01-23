@@ -37,7 +37,9 @@ const Hero = () => {
             ))}
           </div>
           <div className="flex flex-row gap-1 md:gap-2 mt-4 md:ml-4 md:mt-8" >
-            <button className="uppercase text-white/80 hover:text-white text-md md:text-3xl font-mono bg-purple-700/60 shadow-md shadow-purple-600/80 p-4 py-2 rounded-full text-center outline-none hover:scale-105 transition-all duration-105 ease-in-out">
+            <button
+              onClick={() => window.open('https://drive.google.com/file/d/1MSEmiu-TdJyGF8BL-aeTUeNM3NG1ZxMy/view?usp=sharing')}
+              className="uppercase text-white/80 hover:text-white text-md md:text-3xl font-mono bg-purple-700/60 shadow-md shadow-purple-600/80 p-4 py-2 rounded-full text-center outline-none hover:scale-105 transition-all duration-105 ease-in-out">
               Resume/Cv
             </button>
           </div>
