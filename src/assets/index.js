@@ -1,8 +1,4 @@
 import logo from "./logo.svg";
-import backend from "./backend.png";
-import creator from "./creator.png";
-import mobile from "./mobile.png";
-import web from "./web.png";
 import github from "./github.png";
 import play from "./play.png";
 import menu from "./menu.svg";
@@ -26,6 +22,8 @@ import nvim from "./tech/nvim.svg";
 
 import dmarketing from "./company/dmarketing.jpg";
 
+import brainwave from "./brainwave.png";
+import zentry from "./zentry.png";
 
 import brut from "./brut.png";
 import pass from "./pass.png";
@@ -56,10 +54,6 @@ export {
   des,
   reactani,
   logo,
-  backend,
-  creator,
-  mobile,
-  web,
   github,
   menu,
   close,
@@ -82,5 +76,7 @@ export {
   instasvg,
   linkedinsvg,
   whatsappsvg,
-  xsvg
+  xsvg,
+  zentry,
+  brainwave
 };

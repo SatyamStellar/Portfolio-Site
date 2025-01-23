@@ -26,6 +26,8 @@ import {
     linkedinsvg,
     whatsappsvg,
     xsvg,
+    brainwave,
+    zentry,
 } from "../assets";
 
 export const navLinks = [
@@ -103,6 +105,30 @@ const projects = [
         image: todo,
         source_code_link: "https://github.com/SatyamStellar/My-To-do",
         live_link: "https://my-todo-stellar.netlify.app/",
+    },
+    {
+        name: "Zentry Clone",
+        description: "This is a frontend clone of Zentry, I use my frontend skills to make this clone",
+        tags: [
+            { name: "react", color: "blue-text-gradient" },
+            { name: "gsap", color: "green-text-gradient" },
+            { name: "tailwind", color: "pink-text-gradient" }
+        ],
+        image: zentry,
+        source_code_link: "https://github.com/SatyamStellar/Zentry-Clone",
+        live_link: "https://zentry-clone-1.netlify.app/",
+    },
+    {
+        name: "BrainWave",
+        description: "This is a frontend project build in react using tailwind css ",
+        tags: [
+            { name: "react", color: "blue-text-gradient" },
+            { name: "scroll-lock", color: "green-text-gradient" },
+            { name: "tailwind", color: "pink-text-gradient" }
+        ],
+        image: brainwave,
+        source_code_link: "https://github.com/SatyamStellar/BrainWave",
+        live_link: "https://zentry-clone-1.netlify.app/",
     },
     {
         name: "Tech.Gear",
