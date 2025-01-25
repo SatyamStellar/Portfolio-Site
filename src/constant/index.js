@@ -264,7 +264,7 @@ const footerlinks = [
     {
         id: 5,
         icon: whatsappsvg,
-        link: "https://wa.me/8077571779"
+        link: "https://wa.me/+918077571779"
     },
 ]
 export { services, experiences, testimonials, projects, technologies, footerlinks };
