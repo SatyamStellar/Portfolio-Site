@@ -128,7 +128,7 @@ const projects = [
         ],
         image: brainwave,
         source_code_link: "https://github.com/SatyamStellar/BrainWave",
-        live_link: "https://zentry-clone-1.netlify.app/",
+        live_link: "https://stellar-brainwave.netlify.app/",
     },
     {
         name: "Tech.Gear",
