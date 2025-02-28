@@ -153,19 +153,7 @@ const projects = [
         image: pass,
         source_code_link: "https://github.com/SatyamStellar/Random-Password-Gen",
         live_link: "https://randompasswordgen11.netlify.app/",
-    },
-    {
-        name: "BrutForce",
-        description: "This is a basic javascript brute force web-app",
-        tags: [
-            { name: "html/js", color: "blue-text-gradient" },
-            { name: "tailwind", color: "green-text-gradient" },
-            { name: "css", color: "pink-text-gradient" },
-        ],
-        image: brut,
-        source_code_link: "https://github.com/SatyamStellar/Brute-Force",
-        live_link: "https://bruteforcev2.netlify.app/",
-    },
+    }
 ];
 
 const technologies = [
