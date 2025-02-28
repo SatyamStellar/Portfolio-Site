@@ -54,8 +54,8 @@ Check it out here: [satyamstellar-web.vercel.app](https://satyamstellar-web.verc
 Feel free to reach out via:
 
 - **Email:** styam321tomar@gmail.com
-- **LinkedIn:** [Your LinkedIn](www.linkedin.com/in/satyam-stellar)
-- **Twitter/X:** [Your Twitter](https://x.com/satyam_stellar)
+- **LinkedIn:** [Satyam Stellar](www.linkedin.com/in/satyam-stellar)
+- **Twitter/X:** [Satyam](https://x.com/satyam_stellar)
 
 ---
 
