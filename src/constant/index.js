@@ -249,11 +249,6 @@ const footerlinks = [
         icon: xsvg,
         link: "https://x.com/satyam_stellarhttps://x.com/satyam_stellar"
     },
-    {
-        id: 5,
-        icon: whatsappsvg,
-        link: "https://wa.me/+918077571779"
-    },
 ]
 export { services, experiences, testimonials, projects, technologies, footerlinks };
 
