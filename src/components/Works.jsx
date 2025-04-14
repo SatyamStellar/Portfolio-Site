@@ -10,7 +10,7 @@ import { fadeIn, textVariant } from "../utils/motion";
 import { Blob2, Blob5 } from "./decoration/Blob1"
 
 
-const ProjectCard = ({ index, name, description, tags, image, source_code_link, live_link }) => {
+const ProjectCard = ({ index, name, description, tags, vid, image, source_code_link, live_link }) => {
   return (
     <motion.div
       className="relative"
@@ -27,7 +27,23 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link, 
         className="bg-tertiary/30 overflow-hidden hover:shadow-md hover:shadow-sec/15 p-5 rounded-2xl sm:w-[360px] w-full">
 
         <div className="relative w-full h-[200px]">
-          <img src={image} alt={name} className="h-full w-full object-cover rounded-2xl" />
+          {vid ? (
+            <video
+              src={vid}
+              alt={name}
+              className="h-full w-full object-cover rounded-2xl"
+              autoPlay
+              loop
+              muted
+            />
+          ) : (
+            <img
+              src={image}
+              alt={name}
+              className="h-full w-full object-cover rounded-2xl"
+            />
+          )}
+
           <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
             <motion.div whileTap={{ scale: 0.85 }} onClick={() => window.open(source_code_link, "_blank")}
               className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer">

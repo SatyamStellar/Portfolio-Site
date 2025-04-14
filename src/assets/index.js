@@ -26,13 +26,11 @@ import prisma from "./tech/prisma_orm.png"
 
 import dmarketing from "./company/dmarketing.jpg";
 
-import brainwave from "./brainwave.png";
-import zentry from "./zentry.png";
-
-import brut from "./brut.png";
-import pass from "./pass.png";
-import todo from "./todoapp.png";
-import techg from "./techg.png";
+import brainwave from "./projects/brainwave.png";
+import zentry from "./projects/zentry.png";
+import pass from "./projects/pass.png";
+import todo from "./projects/todoapp.png";
+import techg from "./projects/techg.png";
 
 
 import dev from "./animate/dev.json";
@@ -49,7 +47,6 @@ import xsvg from "./svglogos/x.svg"
 export {
   dmarketing,
   todo,
-  brut,
   pass,
   techg,
   play,
