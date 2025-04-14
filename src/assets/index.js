@@ -19,6 +19,10 @@ import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 import nvim from "./tech/nvim.svg";
+import framermotion from "./tech/framer_motion.svg"
+import python from "./tech/python.svg"
+import gsap from "./tech/gsap.png"
+import prisma from "./tech/prisma_orm.png"
 
 import dmarketing from "./company/dmarketing.jpg";
 
@@ -78,5 +82,9 @@ export {
   whatsappsvg,
   xsvg,
   zentry,
-  brainwave
+  brainwave,
+  python,
+  prisma,
+  gsap,
+  framermotion
 };

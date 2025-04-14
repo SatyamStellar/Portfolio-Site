@@ -28,7 +28,14 @@ import {
     xsvg,
     brainwave,
     zentry,
-} from "../assets";
+
+    python,
+    prisma,
+    framermotion,
+    gsap
+
+
+} from "../assets/index.js";
 
 export const navLinks = [
     {
@@ -164,64 +171,69 @@ const technologies = [
     },
     {
         id: 1,
-        name: "CSS 3",
-        icon: css,
-    },
-    {
-        id: 2,
         name: "JavaScript",
         icon: javascript,
     },
-    //{
-    //id:3,
-    //    name: "TypeScript",
-    //    icon: typescript,
-    //},
     {
-        id: 4,
+        id: 2,
         name: "React JS",
         icon: reactjs,
     },
-    //{
-    //    id:5,
-    //    name: "Redux Toolkit",
-    //    icon: redux,
-    //},
     {
-        id: 6,
+        id: 3,
+        name: "Redux Toolkit",
+        icon: redux,
+    },
+    {
+        id: 4,
         name: "Tailwind CSS",
         icon: tailwind,
     },
     {
-        id: 7,
+        id: 5,
         name: "Node JS",
         icon: nodejs,
     },
     {
-        id: 8,
+        id: 6,
         name: "MongoDB",
         icon: mongodb,
     },
     {
-        id: 9,
+        id: 7,
         name: "Three JS",
         icon: threejs,
     },
     {
-        id: 10,
+        id: 8,
         name: "git",
         icon: git,
     },
     {
-        id: 11,
+        id: 9,
         name: "figma",
         icon: figma,
     },
-    //{
-    //    id:12,
-    //    name: "docker",
-    //    icon: docker,
-    //},
+    {
+        id: 10,
+        name: "python",
+        icon: python
+    },
+    {
+        id: 11,
+        name: "prisma",
+        icon: prisma
+    },
+    {
+        id: 12,
+        name: "framer-motion",
+        icon: framermotion
+    },
+    {
+        id: 13,
+        name: "gsap",
+        icon: gsap
+    }
 ];
 const footerlinks = [
     {
