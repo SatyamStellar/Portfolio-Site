@@ -35,6 +35,7 @@ import booksy from "./projects/booksy.png";
 import notes from "./projects/notes.png";
 import trello from "./projects/trello.png";
 import aichatbot from "./projects/aichatbot.png";
+import agencyLanding from './projects/nextzendev.png'
 
 
 import dev from "./animate/dev.json";
@@ -91,5 +92,6 @@ export {
   aichatbot,
   trello,
   booksy,
-  notes
+  notes,
+  agencyLanding
 };

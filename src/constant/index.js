@@ -36,7 +36,8 @@ import {
     trello,
     aichatbot,
     booksy,
-    notes
+    notes,
+    agencyLanding
 
 
 } from "../assets/index.js";
@@ -107,6 +108,21 @@ const testimonials = [
 const projects = [
 
     {
+        name: "Agency Landing Page",
+        description:
+            "A real-world, responsive landing page for a company/agency built with React, TailwindCSS, GSAP, and Framer Motion. It includes dynamic animations, modular components, blog support, and a contact form powered by EmailJS.",
+        tags: [
+            { name: "react", color: "green-text-gradient" },
+            { name: "tailwindcss", color: "blue-text-gradient" },
+            { name: "gsap", color: "purple-text-gradient" },
+            { name: "framer motion", color: "pink-text-gradient" },
+            { name: "emailjs", color: "orange-text-gradient" },
+        ],
+        image: agencyLanding,
+        source_code_link: "",
+        live_link: "https://nextzendev.com/",
+    },
+    {
         name: "Booksy",
         description:
             "A RESTful backend built with Node.js, Express, PostgreSQL, and Prisma ORM. It provides CRUD functionality for managing books, featuring modular architecture and Vercel deployment support.",
@@ -131,9 +147,9 @@ const projects = [
             { name: "react-beautiful-dnd", color: "purple-text-gradient" },
             { name: "context API", color: "orange-text-gradient" },
         ],
-        image: trello, // <- use an appropriate image reference for this project
+        image: trello,
         source_code_link: "https://github.com/SatyamStellar/Trello-Clone",
-        live_link: "", // if not hosted
+        live_link: "https://trello.satyamstellar.space/",
     },
     {
         name: "AI Chatbot",
@@ -173,24 +189,29 @@ const projects = [
         live_link: "https://zentry-clone-1.netlify.app/",
     },
     {
-        name: "Todo WebApp",
-        description: "A web-based platform that allows users to create and manage their todos.",
+        name: "Minimal Tailwind Web App",
+        description:
+            "A lightweight web application styled with TailwindCSS. This project focuses on simplicity and clean design using vanilla JavaScript for dynamic rendering and a custom state management store.",
         tags: [
-            { name: "html/js", color: "blue-text-gradient" },
-            { name: "localstorage", color: "green-text-gradient" },
-            { name: "tailwind", color: "pink-text-gradient" },
+            { name: "javascript", color: "green-text-gradient" },
+            { name: "tailwindcss", color: "blue-text-gradient" },
+            { name: "vanilla js", color: "purple-text-gradient" }
         ],
         image: todo,
         source_code_link: "https://github.com/SatyamStellar/My-To-do",
         live_link: "https://my-todo-stellar.netlify.app/",
     },
+
     {
-        name: "BrainWave",
-        description: "This is a frontend project build in react using tailwind css ",
+        name: "BrainWave Landing Page",
+        description:
+            "A modern, fully responsive company landing page built using React, TailwindCSS, GSAP, and Framer Motion. The design mimics a real-world SaaS agency website with smooth animations, modular components, and an engaging user interface.",
         tags: [
-            { name: "react", color: "blue-text-gradient" },
-            { name: "scroll-lock", color: "green-text-gradient" },
-            { name: "tailwind", color: "pink-text-gradient" }
+            { name: "react", color: "green-text-gradient" },
+            { name: "tailwindcss", color: "blue-text-gradient" },
+            { name: "gsap", color: "purple-text-gradient" },
+            { name: "framer motion", color: "pink-text-gradient" },
+            { name: "vite", color: "orange-text-gradient" }
         ],
         image: brainwave,
         source_code_link: "https://github.com/SatyamStellar/BrainWave",
