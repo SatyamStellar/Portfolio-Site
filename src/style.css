@@ -1,0 +1,61 @@
+@keyframes blob-smooth {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 0.3;
+  }
+
+  25% {
+    transform: translateY(-4px) scale(1.015);
+    opacity: 0.4;
+  }
+
+  50% {
+    transform: translateY(-8px) scale(1.03);
+    opacity: 0.5;
+  }
+
+  75% {
+    transform: translateY(-4px) scale(1.015);
+    opacity: 0.4;
+  }
+
+  100% {
+    transform: translateY(0) scale(1);
+    opacity: 0.3;
+  }
+}
+
+.animate-blob-smooth {
+  animation: blob-smooth 10s infinite cubic-bezier(0.4, 0.0, 0.2, 1);
+
+}
+
+@keyframes pulse-smooth {
+  0% {
+    opacity: 0.5;
+    transform: scale(1);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+
+  100% {
+    opacity: 0.5;
+    transform: scale(1);
+  }
+}
+
+.animate-pulse-smooth {
+  animation: pulse-smooth 3s infinite cubic-bezier(0.4, 0.0, 0.2, 1);
+
+}
+
+.animation-delay-2000 {
+  animation-delay: 2s;
+}
+
+.animation-delay-4000 {
+  animation-delay: 4s;
+}

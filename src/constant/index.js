@@ -74,10 +74,6 @@ const services = [
         title: "React",
         icon: reactani,
     },
-    //{
-    //    title: "NeoVim User",
-    //    icon: creator,
-    //},
 ];
 
 const experiences = [
