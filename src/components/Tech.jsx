@@ -9,18 +9,18 @@ import { fadeIn, textVariant } from "../utils/motion";
 const TechCard = ({ tech, index }) => (
   <motion.div
     variants={fadeIn("up", "spring", index * 0.1, 0.75)}
-    className="relative p-4 bg-n-8/80 rounded-xl border border-n-6/50 backdrop-blur-sm
+    className="relative p-4 bg-n-8/80 rounded-xl bg-white/5   border border-n-6/50 backdrop-blur-sm
       hover:shadow-xl hover:shadow-n-6/20 transition-all duration-300 group"
   >
-    <div className="flex flex-col items-center gap-3">
-      <div className="relative w-14 h-14 group-hover:scale-110 transition-transform duration-300">
+    <div className="flex flex-col items-center  gap-3">
+      <div className="relative w-14 h-14 group-hover:scale-125 transition-transform duration-300">
         <img
           src={tech.icon}
           alt={tech.name}
           className="w-full h-full object-contain"
         />
       </div>
-      <span className="text-white/80 text-sm font-sfMono group-hover:text-white transition-colors">
+      <span className="text-white/70 text-[15px] font-sfMono group-hover:text-white group-hover:text-sm transition-all">
         {tech.name}
       </span>
     </div>
@@ -63,7 +63,7 @@ const Tech = () => {
       {/* Featured Tech (Neovim) */}
       <motion.div
         variants={fadeIn("up", "spring", 0.5, 1)}
-        className="mt-12 flex flex-col items-center"
+        className="mt-10 flex flex-col items-center"
       >
         <div className="relative w-20 h-20 bg-conic-gradient rounded-2xl p-1">
           <div className="flex items-center justify-center w-full h-full bg-n-8 rounded-2xl">
@@ -71,7 +71,7 @@ const Tech = () => {
           </div>
         </div>
         <span className="mt-3 text-white/90 font-sfMono text-lg">
-          Featured: Neovim
+          Neovim
         </span>
       </motion.div>
     </div>
