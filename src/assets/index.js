@@ -31,6 +31,10 @@ import zentry from "./projects/zentry.png";
 import pass from "./projects/pass.png";
 import todo from "./projects/todoapp.png";
 import techg from "./projects/techg.png";
+import booksy from "./projects/booksy.png";
+import notes from "./projects/notes.png";
+import trello from "./projects/trello.png";
+import aichatbot from "./projects/aichatbot.png";
 
 
 import dev from "./animate/dev.json";
@@ -83,5 +87,9 @@ export {
   python,
   prisma,
   gsap,
-  framermotion
+  framermotion,
+  aichatbot,
+  trello,
+  booksy,
+  notes
 };

@@ -31,7 +31,12 @@ import {
     python,
     prisma,
     framermotion,
-    gsap
+    gsap,
+
+    trello,
+    aichatbot,
+    booksy,
+    notes
 
 
 } from "../assets/index.js";
@@ -100,6 +105,73 @@ const testimonials = [
 ];
 
 const projects = [
+
+    {
+        name: "Booksy",
+        description:
+            "A RESTful backend built with Node.js, Express, PostgreSQL, and Prisma ORM. It provides CRUD functionality for managing books, featuring modular architecture and Vercel deployment support.",
+        tags: [
+            { name: "node.js", color: "green-text-gradient" },
+            { name: "express", color: "pink-text-gradient" },
+            { name: "prisma", color: "blue-text-gradient" },
+            { name: "postgresql", color: "orange-text-gradient" },
+        ],
+        image: booksy,
+        source_code_link: "https://github.com/SatyamStellar/Booksy",
+        live_link: "https://booksy.satyamstellar.space/",
+    },
+
+    {
+        name: "Trello Clone",
+        description:
+            "A web-based Trello clone built with React, TailwindCSS, and React Beautiful DnD for a draggable task board experience. It features context-based state management, a responsive design, and an intuitive user interface.",
+        tags: [
+            { name: "react", color: "green-text-gradient" },
+            { name: "tailwindcss", color: "blue-text-gradient" },
+            { name: "react-beautiful-dnd", color: "purple-text-gradient" },
+            { name: "context API", color: "orange-text-gradient" },
+        ],
+        image: trello, // <- use an appropriate image reference for this project
+        source_code_link: "https://github.com/SatyamStellar/Trello-Clone",
+        live_link: "", // if not hosted
+    },
+    {
+        name: "AI Chatbot",
+        description: "A simple AI-powered chatbot built with Node.js and Express, leveraging the Google Generative AI SDK to provide intelligent conversations.",
+        tags: [
+            { name: "node.js", color: "green-text-gradient" },
+            { name: "express", color: "blue-text-gradient" },
+            { name: "google genai", color: "pink-text-gradient" },
+        ],
+        image: aichatbot,
+        source_code_link: "https://github.com/SatyamStellar/AI-Chat-Bot",
+        live_link: "",
+    },
+    {
+        name: "Notes/API in Python ",
+        description: "A secure RESTful notes management backend built with Django and JWT, ready to be paired with any frontend like React.",
+        tags: [
+            { name: "django", color: "blue-text-gradient" },
+            { name: "rest-api", color: "green-text-gradient" },
+            { name: "jwt-auth", color: "pink-text-gradient" },
+        ],
+        image: notes,
+        source_code_link: "https://github.com/SatyamStellar/Django-App",
+        live_link: "https://note.satyamstellar.space/",
+    },
+
+    {
+        name: "Zentry Clone",
+        description: "A visually rich and responsive spa & wellness landing page clone built with React, Tailwind CSS, and Vite. Features smooth animations with GSAP, reusable components, custom fonts, and embedded video support. Ideal for showcasing luxury experiences in a modern design.",
+        tags: [
+            { name: "react", color: "blue-text-gradient" },
+            { name: "gsap", color: "green-text-gradient" },
+            { name: "tailwind", color: "pink-text-gradient" }
+        ],
+        image: zentry,
+        source_code_link: "https://github.com/SatyamStellar/Zentry-Clone",
+        live_link: "https://zentry-clone-1.netlify.app/",
+    },
     {
         name: "Todo WebApp",
         description: "A web-based platform that allows users to create and manage their todos.",
@@ -111,18 +183,6 @@ const projects = [
         image: todo,
         source_code_link: "https://github.com/SatyamStellar/My-To-do",
         live_link: "https://my-todo-stellar.netlify.app/",
-    },
-    {
-        name: "Zentry Clone",
-        description: "This is a frontend clone of Zentry, I use my frontend skills to make this clone",
-        tags: [
-            { name: "react", color: "blue-text-gradient" },
-            { name: "gsap", color: "green-text-gradient" },
-            { name: "tailwind", color: "pink-text-gradient" }
-        ],
-        image: zentry,
-        source_code_link: "https://github.com/SatyamStellar/Zentry-Clone",
-        live_link: "https://zentry-clone-1.netlify.app/",
     },
     {
         name: "BrainWave",
@@ -238,7 +298,7 @@ const footerlinks = [
     {
         id: 0,
         icon: instasvg,
-        link: "https://www.instagram.com/y.eah_._._/"
+        link: "https://www.instagram.com/_.stellar_._/"
     },
     {
         id: 1,
