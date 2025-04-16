@@ -34,7 +34,6 @@ const Tech = () => {
       <Blob5 className="top-[60%] left-[30%] opacity-25" />
       <Blob8 className="bottom-0 right-0 opacity-20" />
 
-      {/* Header Section */}
       <motion.div variants={textVariant()} className="text-center mb-12">
         <p className={`${styles.sectionSubText} text-white/60`}>
           Tools & Technologies
@@ -52,7 +51,6 @@ const Tech = () => {
         </motion.p>
       </motion.div>
 
-      {/* Tech Grid */}
       <div className="w-full max-w-5xl">
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
           {technologies.map((tech, index) => (
@@ -61,14 +59,13 @@ const Tech = () => {
         </div>
       </div>
 
-      {/* Featured Tech (Neovim) */}
       <motion.div
         variants={fadeIn("up", "spring", 0.75)}
         className="relative p-5 px-12 mt-4 bg-n-8/80 rounded-xl bg-zinc-600/10 border border-n-6/50 backdrop-blur-sm
-    hover:shadow-xl hover:shadow-n-6/20 transition-all duration-300 group"
+    hover:shadow-lg hover:shadow-white/20  transition-all duration-300 group"
       >
         <div className="flex flex-col items-center gap-3">
-          <div className="relative w-10 h-10 transition-transform duration-300 group-hover:scale-125">
+          <div className="relative w-10 h-10 hover:shadow-xl transition-transform duration-300 group-hover:scale-125">
             <img
               src={computer}
               className="w-full h-full object-contain"

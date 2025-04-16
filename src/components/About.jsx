@@ -5,6 +5,8 @@ import { services } from '../constant';
 import { SectionWrapper } from '../hoc';
 import { fadeIn, textVariant, staggerContainer } from '../utils/motion';
 import { styles } from '../styles';
+import "../style.css"
+
 import { Blob4, Blob5, Blob6 } from './decoration/Blob1';
 
 const ServiceCard = ({ index, title, icon, description }) => {
@@ -24,7 +26,7 @@ const ServiceCard = ({ index, title, icon, description }) => {
     <motion.div
       whileHover={{ y: -6, rotate: index % 2 === 0 ? 0.3 : -0.3 }}
       className={`relative overflow-hidden ${index === 0 ? 'lg:col-span-2' : ''}`}
-      transition={{ type: 'spring', stiffness: 300, damping: 25 }} // Reduced stiffness and increased damping for smoother motion
+      transition={{ type: 'spring', stiffness: 300, damping: 25 }}
     >
       <Tilt
         options={{
@@ -73,7 +75,6 @@ const ServiceCard = ({ index, title, icon, description }) => {
               </p>
             </div>
 
-            {/* Smoother glow on hover */}
             <div className="absolute inset-0 bg-gradient-to-br from-transparent via-white/8 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700 ease-in-out pointer-events-none" />
           </div>
         </motion.div>
@@ -85,31 +86,29 @@ const ServiceCard = ({ index, title, icon, description }) => {
 const About = () => {
   return (
     <motion.div
-      variants={staggerContainer(0.05, 0.2)} // Faster staggering for smoother appearance
+      variants={staggerContainer(0.05, 0.2)}
       initial="hidden"
       whileInView="show"
       viewport={{ once: true, amount: 0.25 }}
       className="lg:flex items-center lg:gap-8 max-w-7xl mx-auto px-4 sm:px-6 relative "
     >
-      {/* Background gradient and decorative lights with smoother animations */}
       <div className="absolute inset-0 bg-gradient-to-t from-primary/8 via-sec/4 to-transparent blur-3xl -z-10" />
       <div className="absolute top-0 left-0 w-40 h-40 bg-sec/10 rounded-full filter blur-2xl animate-blob-smooth opacity-30" />
       <div className="absolute bottom-0 right-0 w-36 h-36 bg-accent/10 rounded-full filter blur-2xl animate-blob-smooth animation-delay-2000 opacity-30" />
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 w-48 h-48 bg-primary/8 rounded-full filter blur-3xl animate-blob-smooth animation-delay-4000 opacity-25" />
 
-      {/* Intro Section */}
       <motion.div
-        variants={fadeIn('right', 'tween', 0.1, 0.8)} // Faster animation
+        variants={fadeIn('right', 'tween', 0.1, 0.8)}
         className="lg:w-[45%] relative z-10"
       >
-        <motion.div variants={textVariant(0.1)}> {/* Faster text variant */}
+        <motion.div variants={textVariant(0.1)}>
           <p className={`${styles.sectionSubText} text-sec font-bold tracking-wider mb-2`}>Introduction</p>
           <h2 className={`${styles.sectionHeadText} bg-clip-text text-transparent bg-gradient-to-r from-white to-sec mb-4`}>
             Who <span>I Am</span>
           </h2>
         </motion.div>
 
-        <motion.div variants={fadeIn('', '', 0.2, 0.8)} className="space-y-4"> {/* Faster fade in */}
+        <motion.div variants={fadeIn('', '', 0.2, 0.8)} className="space-y-4">
           <p className="text-gray-200 font-sfMono text-[16px] leading-[24px] mb-3">
             A tech enthusiast with a passion for IT, I excel at problem-solving and learning fast. I'm driven by curiosity, always tackling challenges to create innovative solutions.
           </p>
@@ -184,7 +183,7 @@ const About = () => {
                 transition={{ type: 'spring', stiffness: 300, damping: 25 }}
                 className="group"
               >
-                <div className="text-xl font-bold text-transparent animate-pulse text-purple-500 mb-0.5 group-hover:scale-105 transition-transform duration-500 ease-out">
+                <div className="text-xl font-bold animate-pulse  text-purple-500 mb-0.5 group-hover:scale-105 transition-transform duration-500 ease-out">
                   {stat.value}
                 </div>
                 <div className="text-[10px] font-sfMono text-gray-200 tracking-wide">{stat.label}</div>
