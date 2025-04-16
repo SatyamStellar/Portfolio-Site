@@ -15,7 +15,6 @@ const ProjectCard = ({
   name,
   description,
   tags = [],
-  vid,
   image,
   source_code_link,
   live_link,
@@ -27,13 +26,10 @@ const ProjectCard = ({
       setIsMobile(window.innerWidth < 768);
     };
 
-    // Set initial value
     checkMobile();
 
-    // Add event listener for window resize
     window.addEventListener("resize", checkMobile);
 
-    // Clean up
     return () => window.removeEventListener("resize", checkMobile);
   }, []);
 
@@ -44,30 +40,18 @@ const ProjectCard = ({
     >
       <Tilt
         options={{
-          max: isMobile ? 15 : 45, // Reduced tilt on mobile
+          max: isMobile ? 15 : 45,
           scale: 1,
           speed: 450,
         }}
         className="bg-tertiary/30 overflow-hidden hover:shadow-md hover:shadow-sec/15 p-3 sm:p-5 rounded-2xl w-full max-w-[360px]"
       >
         <div className="relative w-full h-[160px] sm:h-[200px]">
-          {vid ? (
-            <video
-              src={vid}
-              className="h-full w-full object-cover rounded-2xl"
-              autoPlay
-              playsInline
-              loop
-              muted
-              poster={image} // Fallback image if video fails
-            />
-          ) : (
-            <img
-              src={image}
-              alt={`${name} preview`}
-              className="h-full w-full object-cover rounded-2xl"
-            />
-          )}
+          <img
+            src={image}
+            alt={`${name} preview`}
+            className="h-full w-full object-cover rounded-2xl"
+          />
 
           <div className="absolute inset-0 flex justify-end m-2 sm:m-3 gap-1 sm:gap-2 card-img_hover">
             <motion.div
