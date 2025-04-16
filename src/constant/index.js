@@ -32,12 +32,16 @@ import {
     prisma,
     framermotion,
     gsap,
+    nvim,
 
     trello,
     aichatbot,
     booksy,
     notes,
-    agencyLanding
+    agencyLanding,
+    computer,
+    vscode,
+    postgresql
 
 
 } from "../assets/index.js";
@@ -241,24 +245,19 @@ const projects = [
 
 const technologies = [
     {
-        id: 0,
+        id: 1,
         name: "HTML 5",
         icon: html,
     },
     {
-        id: 1,
+        id: 2,
         name: "JavaScript",
         icon: javascript,
     },
     {
-        id: 2,
+        id: 3,
         name: "React JS",
         icon: reactjs,
-    },
-    {
-        id: 3,
-        name: "Redux Toolkit",
-        icon: redux,
     },
     {
         id: 4,
@@ -276,40 +275,50 @@ const technologies = [
         icon: mongodb,
     },
     {
+        id: 6,
+        name: "PostgreSQL",
+        icon: postgresql,
+    },
+    {
         id: 7,
+        name: "Prisma",
+        icon: prisma
+    },
+    {
+        id: 8,
         name: "Three JS",
         icon: threejs,
     },
     {
-        id: 8,
-        name: "git",
-        icon: git,
-    },
-    {
         id: 9,
-        name: "figma",
-        icon: figma,
-    },
-    {
-        id: 10,
-        name: "python",
-        icon: python
-    },
-    {
-        id: 11,
-        name: "prisma",
-        icon: prisma
-    },
-    {
-        id: 12,
-        name: "framer-motion",
+        name: "Framer-Motion",
         icon: framermotion
     },
     {
-        id: 13,
-        name: "gsap",
+        id: 10,
+        name: "Gsap",
         icon: gsap
-    }
+    },
+    {
+        id: 11,
+        name: "Figma",
+        icon: figma,
+    },
+    {
+        id: 12,
+        name: "Git",
+        icon: git,
+    },
+    {
+        id: 13,
+        name: "VSCode",
+        icon: vscode
+    },
+    {
+        id: 14,
+        name: "Neovim",
+        icon: nvim
+    },
 ];
 const footerlinks = [
     {

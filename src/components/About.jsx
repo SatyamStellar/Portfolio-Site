@@ -184,7 +184,7 @@ const About = () => {
                 transition={{ type: 'spring', stiffness: 300, damping: 25 }}
                 className="group"
               >
-                <div className="text-xl font-bold text-transparent animate-pulse text-purple-700 mb-0.5 group-hover:scale-105 transition-transform duration-500 ease-out">
+                <div className="text-xl font-bold text-transparent animate-pulse text-purple-500 mb-0.5 group-hover:scale-105 transition-transform duration-500 ease-out">
                   {stat.value}
                 </div>
                 <div className="text-[10px] font-sfMono text-gray-200 tracking-wide">{stat.label}</div>

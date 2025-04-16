@@ -23,6 +23,9 @@ import framermotion from "./tech/framer_motion.svg"
 import python from "./tech/python.svg"
 import gsap from "./tech/gsap.png"
 import prisma from "./tech/prisma_orm.png"
+import computer from "./tech/computer.png"
+import vscode from "./tech/vscode96.png"
+import postgresql from "./tech/postgre.png"
 
 import dmarketing from "./company/dmarketing.jpg";
 
@@ -93,5 +96,8 @@ export {
   trello,
   booksy,
   notes,
-  agencyLanding
+  agencyLanding,
+  computer,
+  vscode,
+  postgresql
 };

@@ -2,18 +2,18 @@ import { motion } from "framer-motion";
 import { SectionWrapper } from "../hoc";
 import { styles } from "../styles";
 import { technologies } from "../constant";
-import { Blob8, Blob5 } from "./decoration/Blob1";
-import { nvim } from "../assets";
+import { Blob8, Blob5, Blob4 } from "./decoration/Blob1";
+import { computer } from "../assets";
 import { fadeIn, textVariant } from "../utils/motion";
 
 const TechCard = ({ tech, index }) => (
   <motion.div
     variants={fadeIn("up", "spring", index * 0.1, 0.75)}
-    className="relative p-4 bg-n-8/80 rounded-xl bg-white/5   border border-n-6/50 backdrop-blur-sm
-      hover:shadow-xl hover:shadow-n-6/20 transition-all duration-300 group"
+    className="relative py-5 bg-n-8/80 rounded-xl bg-zinc-600/10   border border-n-6/50 backdrop-blur-sm
+      hover:shadow-lg hover:shadow-white/20  transition-all duration-300 group"
   >
     <div className="flex flex-col items-center  gap-3">
-      <div className="relative w-14 h-14 group-hover:scale-125 transition-transform duration-300">
+      <div className="relative w-10 h-10 group-hover:scale-125 transition-transform duration-300">
         <img
           src={tech.icon}
           alt={tech.name}
@@ -30,7 +30,8 @@ const TechCard = ({ tech, index }) => (
 const Tech = () => {
   return (
     <div className="relative flex flex-col items-center px-4 py-12">
-      <Blob5 className="top-10 left-0 opacity-30" />
+      <Blob4 className="top-10 -left-10  opacity-15" />
+      <Blob5 className="top-[60%] left-[30%] opacity-25" />
       <Blob8 className="bottom-0 right-0 opacity-20" />
 
       {/* Header Section */}
@@ -62,17 +63,21 @@ const Tech = () => {
 
       {/* Featured Tech (Neovim) */}
       <motion.div
-        variants={fadeIn("up", "spring", 0.5, 1)}
-        className="mt-10 flex flex-col items-center"
+        variants={fadeIn("up", "spring", 0.75)}
+        className="relative p-5 px-12 mt-4 bg-n-8/80 rounded-xl bg-zinc-600/10 border border-n-6/50 backdrop-blur-sm
+    hover:shadow-xl hover:shadow-n-6/20 transition-all duration-300 group"
       >
-        <div className="relative w-20 h-20 bg-conic-gradient rounded-2xl p-1">
-          <div className="flex items-center justify-center w-full h-full bg-n-8 rounded-2xl">
-            <img src={nvim} width={48} height={48} alt="Neovim" />
+        <div className="flex flex-col items-center gap-3">
+          <div className="relative w-10 h-10 transition-transform duration-300 group-hover:scale-125">
+            <img
+              src={computer}
+              className="w-full h-full object-contain"
+            />
           </div>
+          <span className="text-white/70 text-[15px] font-sfMono transition-all group-hover:text-white group-hover:text-sm">
+            Networking
+          </span>
         </div>
-        <span className="mt-3 text-white/90 font-sfMono text-lg">
-          Neovim
-        </span>
       </motion.div>
     </div>
   );
