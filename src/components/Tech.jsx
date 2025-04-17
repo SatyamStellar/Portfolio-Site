@@ -1,39 +1,21 @@
 import { motion } from "framer-motion";
 import { SectionWrapper } from "../hoc";
 import { styles } from "../styles";
-import { technologies } from "../constant";
-import { Blob8, Blob5, Blob4 } from "./decoration/Blob1";
-import { computer } from "../assets";
-import { fadeIn, textVariant } from "../utils/motion";
 
-const TechCard = ({ tech, index }) => (
-  <motion.div
-    variants={fadeIn("up", "spring", index * 0.1, 0.75)}
-    className="relative py-5 bg-n-8/80 rounded-xl bg-zinc-600/10   border border-n-6/50 backdrop-blur-sm
-      hover:shadow-lg hover:shadow-white/20  transition-all duration-300 group"
-  >
-    <div className="flex flex-col items-center  gap-3">
-      <div className="relative w-10 h-10 group-hover:scale-125 transition-transform duration-300">
-        <img
-          src={tech.icon}
-          alt={tech.name}
-          className="w-full h-full object-contain"
-        />
-      </div>
-      <span className="text-white/70 text-[15px] font-sfMono group-hover:text-white group-hover:text-sm transition-all">
-        {tech.name}
-      </span>
-    </div>
-  </motion.div>
-);
+import { Blob8, Blob5, Blob4 } from "./decoration/Blob1";
+import { skills } from "../constant"; // Updated to use the skills array
+import { fadeIn, textVariant } from "../utils/motion";
+import { Tilt } from "react-tilt";
 
 const Tech = () => {
   return (
-    <div className="relative flex flex-col items-center px-4 py-12">
+    <div
+      id="tech"
+      className="relative flex flex-col justify-center items-center  z-10"
+    >
       <Blob4 className="top-10 -left-10  opacity-15" />
       <Blob5 className="top-[60%] left-[30%] opacity-25" />
       <Blob8 className="bottom-0 right-0 opacity-20" />
-
       <motion.div variants={textVariant()} className="text-center mb-12">
         <p className={`${styles.sectionSubText} text-white/60`}>
           Tools & Technologies
@@ -50,32 +32,43 @@ const Tech = () => {
           efficient, and scalable solutions.
         </motion.p>
       </motion.div>
-
-      <div className="w-full max-w-5xl">
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
-          {technologies.map((tech, index) => (
-            <TechCard key={tech.id} tech={tech} index={index} />
-          ))}
-        </div>
+      <div className="w-full flex flex-wrap justify-center gap-12 mt-4">
+        {skills.map((skill, index) => (
+          <Tilt
+            key={`skill-${index}`}
+            options={{ max: 25, scale: 1.05, speed: 450 }}
+          >
+            <motion.div
+              variants={fadeIn("up", "spring", index * 0.2, 0.75)}
+              className="w-full  border border-gray-700/50 rounded-2xl p-6 shadow-md shadow-purple-500/15 backdrop-blur-sm
+                hover:shadow-purple-500/30 transition-all duration-300
+                md:max-w-[400px] sm:max-w-[330px] sm:p-4"
+            >
+              <h3 className="text-gray-400 text-[28px] font-semibold text-center mb-5 md:text-[24px]">
+                {skill.title}
+              </h3>
+              <div className="flex flex-wrap justify-center gap-3 mb-5">
+                {skill.skills.map((item, index_x) => (
+                  <motion.div
+                    key={`skill-x-${index_x}`}
+                    variants={fadeIn("up", "spring", index_x * 0.1, 0.5)}
+                    className="flex items-center justify-center gap-2 text-white/80 text-base font-normal border border-white/50 rounded-xl px-4 py-3
+                      hover:bg-purple-500/10 hover:border-purple-500 transition-all duration-300
+                      md:text-sm md:px-3 md:py-2 sm:text-sm sm:px-3 sm:py-1.5"
+                  >
+                    <img
+                      src={item.image}
+                      alt={item.name}
+                      className="w-6 h-6 object-contain"
+                    />
+                    <span>{item.name}</span>
+                  </motion.div>
+                ))}
+              </div>
+            </motion.div>
+          </Tilt>
+        ))}
       </div>
-
-      <motion.div
-        variants={fadeIn("up", "spring", 0.75)}
-        className="relative p-5 px-12 mt-4 bg-n-8/80 rounded-xl bg-zinc-600/10 border border-n-6/50 backdrop-blur-sm
-    hover:shadow-lg hover:shadow-white/20  transition-all duration-300 group"
-      >
-        <div className="flex flex-col items-center gap-3">
-          <div className="relative w-10 h-10 hover:shadow-xl transition-transform duration-300 group-hover:scale-125">
-            <img
-              src={computer}
-              className="w-full h-full object-contain"
-            />
-          </div>
-          <span className="text-white/70 text-[15px] font-sfMono transition-all group-hover:text-white group-hover:text-sm">
-            Networking
-          </span>
-        </div>
-      </motion.div>
     </div>
   );
 };

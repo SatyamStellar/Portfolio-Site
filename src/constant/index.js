@@ -243,83 +243,105 @@ const projects = [
     }
 ];
 
-const technologies = [
+export const skills = [
     {
-        id: 1,
-        name: "HTML 5",
-        icon: html,
+        title: "Frontend",
+        skills: [
+            {
+                id: 1,
+                name: "HTML 5",
+                image: html
+            },
+            {
+                id: 2,
+                name: "JavaScript",
+                image: javascript
+            },
+            {
+                id: 3,
+                name: "React JS",
+                image: reactjs,
+            },
+            {
+                id: 4,
+                name: "Tailwind CSS",
+                image: tailwind
+            },
+            {
+                id: 8,
+                name: "Three JS",
+                image: threejs
+            },
+            {
+                id: 9,
+                name: "Framer-Motion",
+                image: framermotion
+            },
+            {
+                id: 10,
+                name: "GSAP",
+                image: gsap
+            },
+        ],
     },
     {
-        id: 2,
-        name: "JavaScript",
-        icon: javascript,
+        title: "Backend",
+        skills: [
+            {
+                id: 5,
+                name: "Node JS",
+                image: nodejs
+            },
+            {
+                id: 6,
+                name: "MongoDB",
+                image: mongodb
+            },
+            {
+                id: 6,
+                name: "PostgreSQL",
+                image: postgresql
+            },
+            {
+                id: 7,
+                name: "Prisma",
+                image: prisma
+            },
+        ],
     },
     {
-        id: 3,
-        name: "React JS",
-        icon: reactjs,
-    },
-    {
-        id: 4,
-        name: "Tailwind CSS",
-        icon: tailwind,
-    },
-    {
-        id: 5,
-        name: "Node JS",
-        icon: nodejs,
-    },
-    {
-        id: 6,
-        name: "MongoDB",
-        icon: mongodb,
-    },
-    {
-        id: 6,
-        name: "PostgreSQL",
-        icon: postgresql,
-    },
-    {
-        id: 7,
-        name: "Prisma",
-        icon: prisma
-    },
-    {
-        id: 8,
-        name: "Three JS",
-        icon: threejs,
-    },
-    {
-        id: 9,
-        name: "Framer-Motion",
-        icon: framermotion
-    },
-    {
-        id: 10,
-        name: "Gsap",
-        icon: gsap
-    },
-    {
-        id: 11,
-        name: "Figma",
-        icon: figma,
-    },
-    {
-        id: 12,
-        name: "Git",
-        icon: git,
-    },
-    {
-        id: 13,
-        name: "VSCode",
-        icon: vscode
-    },
-    {
-        id: 14,
-        name: "Neovim",
-        icon: nvim
+        title: "Others",
+        skills: [
+            {
+                id: 11,
+                name: "Figma",
+                image: figma
+            },
+            {
+                id: 12,
+                name: "Git",
+                image: git
+            },
+            {
+                id: 13,
+                name: "VSCode",
+                image: vscode
+            },
+            {
+                id: 14,
+                name: "Neovim",
+                image: nvim
+            },
+            {
+                id: 15,
+                name: "Networking",
+                image: computer
+            },
+        ],
     },
 ];
+
+
 const footerlinks = [
     {
         id: 0,
@@ -347,5 +369,5 @@ const footerlinks = [
         link: "https://x.com/satyam_stellarhttps://x.com/satyam_stellar"
     },
 ]
-export { services, experiences, testimonials, projects, technologies, footerlinks };
+export { services, experiences, testimonials, projects, footerlinks };
 
