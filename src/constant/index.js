@@ -1,5 +1,8 @@
 import {
     todo,
+    github_,
+    restapi,
+    vercel,
     techg,
     pass,
     dmarketing,
@@ -17,6 +20,7 @@ import {
     mongodb,
     git,
     figma,
+    postman,
     docker,
     threejs,
     discordsvg,
@@ -42,7 +46,9 @@ import {
     computer,
     vscode,
     postgresql,
-    firebase
+    firebase,
+    render,
+    express
 
 
 } from "../assets/index.js";
@@ -248,46 +254,55 @@ export const skills = [
     {
         title: "Frontend",
         skills: [
-
-            {
-                id: 11,
-                name: "Figma",
-                image: figma
-            },
             {
                 id: 1,
-                name: "HTML 5",
-                image: html
+                name: "Figma",
+                image: figma,
             },
             {
                 id: 2,
-                name: "JavaScript",
-                image: javascript
+                name: "HTML 5",
+                image: html,
             },
             {
                 id: 3,
+                name: "CSS",
+                image: css,
+            },
+            {
+                id: 4,
+                name: "JavaScript",
+                image: javascript,
+            },
+            {
+                id: 5,
                 name: "React JS",
                 image: reactjs,
             },
             {
-                id: 4,
+                id: 6,
+                name: "Redux",
+                image: redux,
+            },
+            {
+                id: 7,
                 name: "Tailwind CSS",
-                image: tailwind
+                image: tailwind,
             },
             {
                 id: 8,
                 name: "Three JS",
-                image: threejs
+                image: threejs,
             },
             {
                 id: 9,
-                name: "Framer-Motion",
-                image: framermotion
+                name: "Framer Motion",
+                image: framermotion,
             },
             {
                 id: 10,
                 name: "GSAP",
-                image: gsap
+                image: gsap,
             },
         ],
     },
@@ -295,59 +310,88 @@ export const skills = [
         title: "Backend",
         skills: [
             {
-                id: 5,
+                id: 11,
                 name: "Node JS",
-                image: nodejs
+                image: nodejs,
             },
             {
-                id: 6,
+                id: 12,
+                name: "REST API",
+                image: restapi
+            },
+            {
+                id: 13,
+                name: "Express",
+                image: express,
+            },
+            {
+                id: 14,
                 name: "MongoDB",
-                image: mongodb
+                image: mongodb,
             },
             {
-                id: 6,
+                id: 15,
                 name: "PostgreSQL",
-                image: postgresql
+                image: postgresql,
             },
             {
-                id: 7,
+                id: 16,
                 name: "Prisma",
-                image: prisma
+                image: prisma,
             },
             {
-                id: 8,
-                name: "FireBase",
-                image: firebase
-            }
+                id: 17,
+                name: "Firebase",
+                image: firebase,
+            },
         ],
     },
     {
         title: "Others",
         skills: [
             {
-                id: 12,
+                id: 18,
                 name: "Git",
-                image: git
+                image: git,
             },
             {
-                id: 13,
+                id: 19,
+                name: "GitHub",
+                image: github_,
+            },
+            {
+                id: 20,
                 name: "VSCode",
-                image: vscode
+                image: vscode,
             },
             {
-                id: 14,
+                id: 21,
                 name: "Neovim",
-                image: nvim
+                image: nvim,
             },
             {
-                id: 15,
+                id: 22,
                 name: "Networking",
-                image: computer
+                image: computer,
+            },
+            {
+                id: 23,
+                name: "Postman",
+                image: postman,
+            },
+            {
+                id: 24,
+                name: "Vercel",
+                image: vercel,
+            },
+            {
+                id: 25,
+                name: "Render",
+                image: render,
             },
         ],
     },
 ];
-
 
 const footerlinks = [
     {

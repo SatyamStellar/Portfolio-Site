@@ -3,7 +3,7 @@ import { SectionWrapper } from "../hoc";
 import { styles } from "../styles";
 
 import { Blob8, Blob5, Blob4 } from "./decoration/Blob1";
-import { skills } from "../constant"; // Updated to use the skills array
+import { skills } from "../constant";
 import { fadeIn, textVariant } from "../utils/motion";
 import { Tilt } from "react-tilt";
 
@@ -32,7 +32,7 @@ const Tech = () => {
           efficient, and scalable solutions.
         </motion.p>
       </motion.div>
-      <div className="w-full  flex flex-wrap justify-center gap-10 mt-4">
+      <div className="w-full  flex flex-wrap justify-center gap-14 mt-4">
         {skills.map((skill, index) => (
           <Tilt
             key={`skill-${index}`}

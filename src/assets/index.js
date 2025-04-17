@@ -27,6 +27,12 @@ import computer from "./tech/computer.png"
 import vscode from "./tech/vscode96.png"
 import postgresql from "./tech/postgre.png"
 import firebase from "./tech/firebase.png"
+import render from "./tech/render.svg"
+import express from "./tech/express.png"
+import postman from "./tech/postman.svg"
+import vercel from "./tech/vercel.png"
+import github_ from "./tech/github.png"
+import restapi from "./tech/restapi.png"
 
 import dmarketing from "./company/dmarketing.jpg";
 
@@ -101,5 +107,11 @@ export {
   computer,
   vscode,
   postgresql,
-  firebase
+  firebase,
+  render,
+  express,
+  postman,
+  vercel,
+  github_,
+  restapi
 };
