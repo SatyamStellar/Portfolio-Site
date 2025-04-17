@@ -26,6 +26,7 @@ import prisma from "./tech/prisma_orm.png"
 import computer from "./tech/computer.png"
 import vscode from "./tech/vscode96.png"
 import postgresql from "./tech/postgre.png"
+import firebase from "./tech/firebase.png"
 
 import dmarketing from "./company/dmarketing.jpg";
 
@@ -99,5 +100,6 @@ export {
   agencyLanding,
   computer,
   vscode,
-  postgresql
+  postgresql,
+  firebase
 };

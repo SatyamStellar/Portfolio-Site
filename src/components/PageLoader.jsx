@@ -66,9 +66,9 @@ const PageLoader = ({ isLoading }) => {
       <motion.p
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0, transition: { delay: 0.2, duration: 0.5 } }}
-        className="absolute bottom-10 text-white/70 font-mono text-lg tracking-wide"
+        className="absolute top-[60%] text-white/70 font-mono text-xl tracking-wide"
       >
-        Loading Tech Stack...
+        Loading...
       </motion.p>
     </motion.div>
   );

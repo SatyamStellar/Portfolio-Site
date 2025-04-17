@@ -41,7 +41,8 @@ import {
     agencyLanding,
     computer,
     vscode,
-    postgresql
+    postgresql,
+    firebase
 
 
 } from "../assets/index.js";
@@ -247,6 +248,12 @@ export const skills = [
     {
         title: "Frontend",
         skills: [
+
+            {
+                id: 11,
+                name: "Figma",
+                image: figma
+            },
             {
                 id: 1,
                 name: "HTML 5",
@@ -307,16 +314,16 @@ export const skills = [
                 name: "Prisma",
                 image: prisma
             },
+            {
+                id: 8,
+                name: "FireBase",
+                image: firebase
+            }
         ],
     },
     {
         title: "Others",
         skills: [
-            {
-                id: 11,
-                name: "Figma",
-                image: figma
-            },
             {
                 id: 12,
                 name: "Git",

@@ -11,7 +11,7 @@ const Tech = () => {
   return (
     <div
       id="tech"
-      className="relative flex flex-col justify-center items-center  z-10"
+      className="relative w-full flex flex-col justify-center items-center  z-10"
     >
       <Blob4 className="top-10 -left-10  opacity-15" />
       <Blob5 className="top-[60%] left-[30%] opacity-25" />
@@ -32,7 +32,7 @@ const Tech = () => {
           efficient, and scalable solutions.
         </motion.p>
       </motion.div>
-      <div className="w-full flex flex-wrap justify-center gap-12 mt-4">
+      <div className="w-full  flex flex-wrap justify-center gap-10 mt-4">
         {skills.map((skill, index) => (
           <Tilt
             key={`skill-${index}`}
