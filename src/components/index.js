@@ -9,6 +9,7 @@ import Works from './Works';
 import Feedbacks from './Feedbacks';
 import Contact from './Contact';
 import Footer from './Footer';
+import PageLoader from './PageLoader'
 
 export {
   Hero,
@@ -23,5 +24,6 @@ export {
   MainRobotCanvas,
   StarsCanvas,
   Blob1,
-  Footer
+  Footer,
+  PageLoader
 }
