@@ -22,12 +22,13 @@ const Hero = () => {
       <div className={`${styles.paddingX} absolute inset-0 xl:items-center items-start xl:top-0 top-[120px] max-w-7xl mx-auto flex flex-row  gap-5`}>
         <div className="flex flex-col justify-center items-center mt-5">
           <div className="w-5 h-5 rounded-full bg-sec" />
-          <div className="w-1 sm:h-80 h-40 black-gradient-back" />
+          <div className="w-1  sm:h-80 h-44 black-gradient-back" />
         </div>
         <div className="md:w-[70%]  xl:-translate-y-[3rem] z-[50]">
           <h1 className={`font-varien font-bold lg:text-[50px] sm:text-[30px] xs:text-[20px] text-[20px] mt-2 tracking-wide text-white`}>Satyam <span className="font-bold font-varien text-sec">Stellar</span></h1>
           <p className={`md:w-[70%] w-[90%] font-liberationMono text-white/60 uppercase lg:text-[16px] sm:text-[14px]  text-[10px] md:ml-4 mt-2 `}>
-            Aspiring Full-Stack Developer | Frontend developer | React developer | Node | Backend developer| Building the Future of Technology          </p>
+            Full-stack developer passionate about building sleek, modern web apps with React, Tailwind, and Node. Always exploring new technologies to create impactful, user-focused experiences.
+          </p>
           <div className="flex flex-row gap-1 md:gap-2 mt-4 md:ml-4">
             {techSkills.map((skill, index) => (
               <div key={index}

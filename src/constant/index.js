@@ -1,6 +1,9 @@
 import {
     todo,
+    webCrawler,
+    aiImageEnhancer,
     github_,
+    gmailClone,
     restapi,
     vercel,
     techg,
@@ -129,6 +132,22 @@ const projects = [
         source_code_link: "",
         live_link: "https://nextzendev.com/",
     },
+
+    {
+        name: "Gmail Clone",
+        description:
+            "A fully functional Gmail clone built using React, TailwindCSS, Redux Toolkit, Firebase for authentication and data handling, and React Router for navigation. It supports Google login, inbox viewing, sending emails, and real-time updates.",
+        tags: [
+            { name: "react", color: "green-text-gradient" },
+            { name: "tailwindcss", color: "blue-text-gradient" },
+            { name: "redux toolkit", color: "purple-text-gradient" },
+            { name: "firebase", color: "orange-text-gradient" },
+            { name: "react router", color: "pink-text-gradient" },
+        ],
+        image: gmailClone,
+        source_code_link: "https://github.com/SatyamStellar/Gmail-Clone",
+        live_link: "https://gmail.satyamstellar.space/",
+    },
     {
         name: "Booksy",
         description:
@@ -158,6 +177,7 @@ const projects = [
         source_code_link: "https://github.com/SatyamStellar/Trello-Clone",
         live_link: "https://trello.satyamstellar.space/",
     },
+
     {
         name: "AI Chatbot",
         description: "A simple AI-powered chatbot built with Node.js and Express, leveraging the Google Generative AI SDK to provide intelligent conversations.",
@@ -194,6 +214,21 @@ const projects = [
         image: zentry,
         source_code_link: "https://github.com/SatyamStellar/Zentry-Clone",
         live_link: "https://zentry-clone-1.netlify.app/",
+    },
+
+    {
+        name: "Simple Web Crawler",
+        description:
+            "A lightweight Node.js-based web crawler that fetches and analyzes web pages. Utilizes jsdom for DOM parsing and supports recursive crawling. Includes a reporting module for structured output and Jest tests for reliability.",
+        tags: [
+            { name: "node.js", color: "green-text-gradient" },
+            { name: "jsdom", color: "blue-text-gradient" },
+            { name: "jest", color: "pink-text-gradient" },
+            { name: "web crawling", color: "orange-text-gradient" },
+        ],
+        image: webCrawler,
+        source_code_link: "https://github.com/SatyamStellar/Web-Crawler",
+        live_link: "",
     },
     {
         name: "Minimal Tailwind Web App",

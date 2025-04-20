@@ -93,6 +93,14 @@ body::-webkit-scrollbar {
   transform: translateZ(0);
 }
 
+
+.purple-text-gradient {
+  background: linear-gradient(90.13deg, #a18cd1 1.9%, #fbc2eb 97.5%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .green-pink-gradient {
   background: "#00cea8";
   background: linear-gradient(90.13deg, #00cea8 1.9%, #bf61ff 97.5%);

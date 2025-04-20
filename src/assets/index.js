@@ -46,6 +46,9 @@ import notes from "./projects/notes.png";
 import trello from "./projects/trello.png";
 import aichatbot from "./projects/aichatbot.png";
 import agencyLanding from './projects/nextzendev.png'
+import gmailClone from "./projects/gmailclone.png"
+import webCrawler from "./projects/webcarwler.png"
+import aiImageEnhancer from "./projects/aipic.png"
 
 
 import dev from "./animate/dev.json";
@@ -113,5 +116,8 @@ export {
   postman,
   vercel,
   github_,
-  restapi
+  restapi,
+  gmailClone,
+  webCrawler,
+  aiImageEnhancer,
 };
