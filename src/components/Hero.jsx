@@ -27,7 +27,7 @@ const Hero = () => {
         <div className="md:w-[70%]  xl:-translate-y-[3rem] z-[50]">
           <h1 className={`font-varien font-bold lg:text-[50px] sm:text-[30px] xs:text-[20px] text-[20px] mt-2 tracking-wide text-white`}>Satyam <span className="font-bold font-varien text-sec">Stellar</span></h1>
           <p className={`md:w-[70%] w-[90%] font-liberationMono text-white/60 uppercase lg:text-[16px] sm:text-[14px]  text-[10px] md:ml-4 mt-2 `}>
-            Full-stack developer passionate about building sleek, modern web apps with React, Tailwind, and Node. Always exploring new technologies to create impactful, user-focused experiences.
+            Creative Web Engineer passionate about building sleek, modern web apps with React, Tailwind, and Node. Always exploring new technologies to create impactful, user-focused experiences.
           </p>
           <div className="flex flex-row gap-1 md:gap-2 mt-4 md:ml-4">
             {techSkills.map((skill, index) => (
@@ -38,7 +38,7 @@ const Hero = () => {
           </div>
           <div className="flex flex-row gap-1 md:gap-2 mt-4 md:ml-4 md:mt-8" >
             <button
-              onClick={() => window.open('https://drive.google.com/file/d/1MSEmiu-TdJyGF8BL-aeTUeNM3NG1ZxMy/view?usp=sharing')}
+              onClick={() => window.open('https://drive.google.com/file/d/1-e8VSx5Cb-pPpyzMhQOU3syOcZSAFvBj/view?usp=sharing')}
               className="uppercase text-white/80 hover:text-white text-md md:text-3xl font-mono bg-purple-700/60 shadow-md shadow-purple-600/80 p-4 py-2 rounded-full text-center outline-none hover:scale-105 transition-all duration-105 ease-in-out">
               Resume/Cv
             </button>
