@@ -1,12 +1,10 @@
 import { useState, useRef } from "react";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
+import Spline from "@splinetool/react-spline";
 
-import { ObjectCanvas } from "./canvas";
-import { SectionWrapper } from "../hoc";
 
 import { styles } from "../styles";
-import { slideIn } from "../utils/motion";
 
 import { Blob1 } from "./decoration/Blob1";
 
@@ -59,9 +57,8 @@ const Contact = () => {
   };
 
   return (
-    <div className="xl:mt-10 flex xl:flex-row flex-col-reverse gap-6 rounded-xl overflow-hidden max-w-6xl mx-auto py-8">
+    <section id="contact" className="xl:mt-10 flex xl:flex-row flex-col-reverse gap-6 rounded-xl overflow-hidden max-w-6xl mx-auto py-8">
       <motion.div
-        variants={slideIn("left", "tween", 0.2, 1)}
         className="flex-[0.75] bg-tertiary/5 backdrop-blur-sm p-6 rounded-xl relative"
       >
         <Blob1 className="opacity-40 absolute top-[-10%] left-[-10%] scale-90 pointer-events-none" />
@@ -125,13 +122,12 @@ const Contact = () => {
       </motion.div>
 
       <motion.div
-        variants={slideIn("right", "tween", 0.2, 1)}
-        className="xl:flex-1 xl:h-auto md:h-[500px] h-[300px] rounded-xl overflow-hidden"
+        className="xl:flex-1 xl:h-auto mt-10 ml-10 md:ml-0 md:h-[600px] md:w-[700px] w-[300px] h-[300px] rounded-xl overflow-hidden"
       >
-        <ObjectCanvas />
+        <Spline scene="https://prod.spline.design/SHDgXpUCC9ibFZ0c/scene.splinecode" />
       </motion.div>
-    </div>
+    </section>
   );
 };
 
-export default SectionWrapper(Contact, "contact");
+export default Contact

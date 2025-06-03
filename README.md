@@ -1,62 +1,12 @@
-# 🚀 Stellar Portfolio
+# React + Vite
 
-A modern and interactive developer portfolio built with **React**, **Three.js**, and **GSAP**, featuring 3D animations and smooth UI/UX interactions.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-## 🌟 Features
+Currently, two official plugins are available:
 
-- 🎨 **Sleek & Responsive UI** – Dark-themed, futuristic design.
-- 🎥 **3D Animations** – Powered by `@react-three/fiber` and `@gsap/react`.
-- 🔥 **Smooth Scroll & Parallax Effects** – Using `framer-motion` and `react-just-parallax`.
-- 📩 **Email Contact Form** – Integrated via `@emailjs/browser`.
-- 🛠️ **Tech Stack Display** – Showcasing skills with dynamic animations.
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## 🛠️ Technologies Used
+## Expanding the ESLint configuration
 
-- **React**
-- **Three.js**
-- **GSAP**
-- **Framer Motion**
-- **React-Three-Fiber**
-- **Lottie Animations**
-- **React Router DOM**
-- **React Icons**
-
-## 🚀 Installation & Setup
-
-### Install dependencies
-
-```sh
-pnpm install
-```
-
-### Set up environment variables
-
-Create a `.env` file and add your credentials (e.g., EmailJS API keys).
-
-### Run the development server
-
-```sh
-pnpm dev
-```
-
-### Build for production
-
-```sh
-pnpm build
-```
-
-## 🔗 Live Demo
-
-Check it out here: [satyamstellar-web.vercel.app](https://satyamstellar-web.vercel.app/)
-
-## 📬 Contact
-
-Feel free to reach out via:
-
-- **Email:** styam321tomar@gmail.com
-- **LinkedIn:** [Satyam Stellar](www.linkedin.com/in/satyam-stellar)
-- **Twitter/X:** [Satyam](https://x.com/satyam_stellar)
-
----
-
-Made with ❤️ by **Satyam Stellar**
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.

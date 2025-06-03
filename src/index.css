@@ -1,23 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-  scroll-behavior: smooth;
-  color-scheme: dark;
-}
-
-
-.html,
-body::-webkit-scrollbar {
-  display: none
-}
 
 @font-face {
   font-family: 'Elronmonospace';
@@ -54,6 +38,40 @@ body::-webkit-scrollbar {
   src: url('./assets/fonts/varien.woff2') format('woff2');
 }
 
+
+@theme {
+
+  --color-primary: #1B262C;
+  --color-secondary: #1d212a;
+  --color-tertiary: #1d212a;
+  --color-sec: #623ea5;
+
+  --font-elronmono: "Elronmonospace";
+  --font-consolamono: "ConsolaMonoBold";
+  --font-monaco: "monaco";
+  --font-sfmono: "SFMonoRegular";
+  --font-liberationmono: "LiberationMonoRegular";
+  --font-varien: "varien";
+
+  --breakpoint-xs: 450px;
+  --breakpoint-md: 850px;
+}
+
+
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  color-scheme: dark;
+}
+
+
+.html,
+body::-webkit-scrollbar {
+  display: none
+}
+
+
 .hash-span {
   margin-top: -100px;
   padding-bottom: 100px;
@@ -62,26 +80,21 @@ body::-webkit-scrollbar {
 
 .black-gradient {
   background: #000000;
-  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right,
       #434343,
       #000000);
-  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right,
       #434343,
       #000000);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 
 .black-gradient-back {
   background: #623ea5;
-  /* Black base */
   background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, #623ea5 100%);
   background: -webkit-linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, #623ea5 100%);
 }
 
-/* canvas- styles */
 .canvas-loader {
   font-size: 10px;
   width: 1em;
@@ -109,61 +122,48 @@ body::-webkit-scrollbar {
 
 .orange-text-gradient {
   background: #f12711;
-  /* fallback for old browsers */
   background: -webkit-linear-gradient(to top,
       #f12711,
       #f5af19);
-  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to top,
       #f12711,
       #f5af19);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .green-text-gradient {
   background: #11998e;
-  /* fallback for old browsers */
   background: -webkit-linear-gradient(to top,
       #11998e,
       #38ef7d);
-  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to top,
       #11998e,
       #38ef7d);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .blue-text-gradient {
-  /* background: -webkit-linear-gradient(#eee, #333); */
   background: #56ccf2;
-  /* fallback for old browsers */
   background: -webkit-linear-gradient(to top,
       #2f80ed,
       #56ccf2);
-  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to top,
       #2f80ed,
       #56ccf2);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .pink-text-gradient {
   background: #ec008c;
-  /* fallback for old browsers */
   background: -webkit-linear-gradient(to top,
       #ec008c,
       #fc6767);
-  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to top,
       #ec008c,
       #fc6767);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -255,5 +255,5 @@ body::-webkit-scrollbar {
 
 
 .floating-nav {
-  @apply backdrop-blur-[2px] bg-black bg-opacity-20 rounded-full border;
+  @apply backdrop-blur-[2px] bg-black/20 rounded-full border;
 }

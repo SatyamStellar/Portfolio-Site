@@ -1,12 +1,9 @@
-import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 
-import { SectionWrapper } from "../hoc";
 import { styles } from "../styles";
 import { github, pplay } from "../assets";
 import { projects } from "../constant";
-import { fadeIn, textVariant } from "../utils/motion";
 
 import { Blob2, Blob5 } from "./decoration/Blob1";
 
@@ -27,7 +24,6 @@ const ProjectCard = ({
     };
 
     checkMobile();
-
     window.addEventListener("resize", checkMobile);
 
     return () => window.removeEventListener("resize", checkMobile);
@@ -36,16 +32,13 @@ const ProjectCard = ({
   return (
     <motion.div
       className="relative"
-      variants={fadeIn("up", "spring", index * 0.5, 0.75)}
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.25 }}
+      transition={{ duration: 0.2, delay: index * 0.1, ease: "easeInOut" }}
     >
-      <Tilt
-        options={{
-          max: isMobile ? 15 : 45,
-          scale: 1,
-          speed: 450,
-        }}
-        className="bg-tertiary/30 overflow-hidden hover:shadow-md hover:shadow-sec/15 p-3 sm:p-5 rounded-2xl w-full max-w-[360px]"
-      >
+      {/* Removed Tilt wrapper temporarily for mobile fix */}
+      <div className="bg-tertiary/30 overflow-hidden hover:shadow-md hover:shadow-sec/15 p-3 sm:p-5 rounded-2xl w-full max-w-[100%] sm:max-w-[360px]">
         <div className="relative w-full h-[160px] sm:h-[200px]">
           <img
             src={image}
@@ -98,40 +91,56 @@ const ProjectCard = ({
             </p>
           ))}
         </div>
-      </Tilt>
+      </div>
     </motion.div>
   );
 };
 
 const Works = () => {
   return (
-    <>
-      <Blob2 className="hidden sm:block absolute top-[5%] left-[2%] opacity-25" />
+    <section id="work" className="relative w-full min-h-screen overflow-visible px-4 pb-10">
+      <Blob2 className="absolute top-[5%] left-[2%] opacity-25" />
 
-      <motion.div variants={textVariant()}>
-        <p className={`${styles.sectionSubText} px-4 sm:px-0`}>Some of my work</p>
-        <h2 className={`${styles.sectionHeadText} px-4 sm:px-0`}>Projects.</h2>
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.25 }}
+        transition={{ duration: 0.8, ease: "easeInOut" }}
+        className="mt-20 sm:ml-40"
+      >
+        <p className={`${styles.sectionSubText} px-4`}>Some of my work</p>
+        <h2 className={`${styles.sectionHeadText} px-4`}>Projects.</h2>
       </motion.div>
 
-      <div className="w-full flex px-4 sm:px-0">
-        <motion.p
-          variants={fadeIn("", "", 0.1, 1)}
-          className="mt-3 sm:mt-4 text-white/60 font-moonrising text-xs sm:text-sm max-w-3xl tracking-wide leading-[20px] sm:leading-[24px] md:leading-[30px]"
-        >
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true, amount: 0.25 }}
+        transition={{ duration: 0.8, ease: "easeInOut" }}
+        className="w-full sm:ml-40 px-4"
+      >
+        <motion.p className="mt-3 text-white/60 font-moonrising text-xs sm:text-sm max-w-3xl tracking-wide leading-[20px] sm:leading-[24px] md:leading-[30px]">
           These projects demonstrate my expertise with real-world examples,
           including brief descriptions, links to source code, and live demos.
           They show my ability to solve complex problems, work with diverse
           technologies, and manage projects effectively.
         </motion.p>
-      </div>
+      </motion.div>
 
-      <div className="mt-12 sm:mt-20 flex flex-wrap justify-center gap-4 sm:gap-7 px-4 sm:px-0">
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true, amount: 0.25 }}
+        transition={{ duration: 0.8, ease: "easeInOut" }}
+        className="mt-12 flex flex-wrap justify-center gap-4"
+      >
         {projects.map((project, index) => (
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}
-      </div>
-    </>
+      </motion.div>
+    </section>
   );
 };
 
-export default SectionWrapper(Works, "work");
+export default Works;
+

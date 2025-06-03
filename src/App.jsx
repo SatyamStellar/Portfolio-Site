@@ -10,7 +10,6 @@ import {
   Works,
   Experience,
   Footer,
-  StarsCanvas,
   PageLoader
 } from "./components";
 
@@ -30,8 +29,8 @@ const App = () => {
       <div className="relative z-0 bg-[#06060c]">
         <PageLoader isLoading={isLoading} />
 
-        <div className={isLoading ? "opacity-0" : "opacity-100 transition-opacity duration-300"}>
-          <div className="bg-cover bg-no-repeat bg-center">
+        <div className={isLoading ? "opacity-0" : "opacity-100 transition-opacity duration-300 "}>
+          <div className="">
             <Navbar />
             <Hero />
           </div>
@@ -39,11 +38,8 @@ const App = () => {
           <Tech />
           <Experience />
           <Works />
-          <div className="relative z-0">
-            <Contact />
-            <StarsCanvas />
-            <Footer />
-          </div>
+          <Contact />
+          <Footer />
         </div>
       </div>
     </BrowserRouter>

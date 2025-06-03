@@ -1,14 +1,12 @@
 import { motion } from "framer-motion";
 
-import { SectionWrapper } from "../hoc";
 import { styles } from "../styles";
 
 import { testimonials } from "../constant";
-import { fadeIn, textVariant } from "../utils/motion";
 
 
 const FeedBackCard = ({ index, testimonial, name, designation, company, image }) => (
-  <motion.div variants={fadeIn("", "spring", index * 0.5, 0.75)}
+  <motion.div
     className="bg-black-200 p-10 rounded-3xl xs:w-[320px] w-full"
   >
     <p className="text-white font-black text-[48px]">"</p>
@@ -26,7 +24,7 @@ const FeedBackCard = ({ index, testimonial, name, designation, company, image })
 
     </div>
 
-  </motion.div>
+  </motion.div >
 )
 
 const Feedbacks = () => {
@@ -51,4 +49,4 @@ const Feedbacks = () => {
   )
 }
 
-export default SectionWrapper(Feedbacks, "feedback")
+export default Feedbacks

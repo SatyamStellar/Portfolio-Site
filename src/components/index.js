@@ -1,4 +1,3 @@
-import { ObjectCanvas, MainRobotCanvas, StarsCanvas, } from './canvas';
 import Blob1 from "./decoration/Blob1"
 import Hero from './Hero';
 import Navbar from './Navbar';
@@ -20,9 +19,6 @@ export {
   Works,
   Feedbacks,
   Contact,
-  ObjectCanvas,
-  MainRobotCanvas,
-  StarsCanvas,
   Blob1,
   Footer,
   PageLoader
