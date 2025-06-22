@@ -35,6 +35,7 @@ import github_ from "./tech/github.png"
 import restapi from "./tech/restapi.png"
 
 import dmarketing from "./company/dmarketing.jpg";
+import jaiswaltravels from "./company/Jaiswal.png";
 
 import brainwave from "./projects/brainwave.png";
 import zentry from "./projects/zentry.png";
@@ -120,4 +121,5 @@ export {
   gmailClone,
   webCrawler,
   aiImageEnhancer,
+  jaiswaltravels,
 };

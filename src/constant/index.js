@@ -51,7 +51,9 @@ import {
     postgresql,
     firebase,
     render,
-    express
+    express,
+
+    jaiswaltravels
 
 
 } from "../assets/index.js";
@@ -103,6 +105,19 @@ const experiences = [
             "Editing and refining video in Adobe Premiere Pro such as color correction is enabled.",
         ],
     },
+    {
+        title: "Traveling Website",
+        company_name: "Jaiswaltravels.in",
+        icon: jaiswaltravels,
+        iconBg: "#383E56",
+        date: "June 2/2025 - June 7/2025",
+        points: [
+            "Designed and developed a dynamic travel booking platform for a freelance client using React, Node.js, Express, andMongoDB.",
+            "Integrated Nodemailer to handle customer inquiries, enabling seamless communication regarding travel packages.",
+            "Built a custom admin dashboard to allow real-time updates to package pricing based on seasonal demand.",
+        ],
+    },
+
 ];
 
 const testimonials = [

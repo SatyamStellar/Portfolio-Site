@@ -6,12 +6,23 @@ import 'react-vertical-timeline-component/style.min.css';
 import { styles } from "../styles";
 import { experiences } from "../constant";
 
-const ExperienceCard = ({ experience }) => (
+const ExperienceCard = ({ experience, index }) => (
   <VerticalTimelineElement
-    contentStyle={{ backgroundColor: '#1d212a', color: "#fff" }}
-    contentArrowStyle={{ borderRight: '7px solid #1d212a' }}
+    contentStyle={{
+      backgroundColor: '#1d212a',
+      color: "#fff",
+      marginBottom: '40px', // Added spacing between elements
+      maxWidth: '500px', // Control card width
+      marginLeft: index % 2 === 0 ? '50px' : 'auto', // Left for even, right for odd
+      marginRight: index % 2 === 0 ? 'auto' : '50px',
+    }}
+    contentArrowStyle={{
+      borderRight: index % 2 === 0 ? '7px solid #1d212a' : 'none',
+      borderLeft: index % 2 === 1 ? '7px solid #1d212a' : 'none',
+    }}
     date={experience.date}
     iconStyle={{ background: experience.iconBg }}
+    position={index % 2 === 0 ? 'left' : 'right'} // Alternate position
     icon={
       <div className="w-full h-full flex justify-center items-center">
         <img src={experience.icon} alt={experience.company_name} className="w-[60%] h-[60%] object-contain" />
@@ -52,7 +63,7 @@ const Experience = () => {
         viewport={{ once: true, amount: 0.25 }}
         transition={{ duration: 0.8, ease: "easeInOut" }}
       >
-        <VerticalTimeline>
+        <VerticalTimeline className="mt-4" lineColor="#1d212a">
           {experiences.map((experience, index) => (
             <motion.div
               key={index}
@@ -61,7 +72,7 @@ const Experience = () => {
               viewport={{ once: true, amount: 0.25 }}
               transition={{ duration: 0.5, delay: index * 0.2, ease: "easeInOut" }}
             >
-              <ExperienceCard experience={experience} />
+              <ExperienceCard experience={experience} index={index} />
             </motion.div>
           ))}
         </VerticalTimeline>
